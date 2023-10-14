@@ -6,11 +6,8 @@ public class StringArray {
         for (int i = 1; i <= array.length; i++) {
             System.out.println("Введите слово " + i);
             array[i - 1] = Helperes.getString();
-        }
-
-        for (int i = 0; i < array.length; i++) {
-            if (array[i].length() >= maxString.length()) {
-                maxString = array[i];
+            if (array[i - 1].length() >= maxString.length()) {
+                maxString = array[i - 1];
             }
         }
         System.out.println("Самое длинное слово = " + maxString);
