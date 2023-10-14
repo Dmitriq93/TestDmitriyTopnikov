@@ -1,21 +1,6 @@
 import java.util.Scanner;
 
 public class Calculator {
-    public static double getNum() {
-        Scanner scanner = new Scanner(System.in);
-        try {
-            return scanner.nextDouble();
-        } catch (Exception e) {
-            System.out.println("Вы ввели не верные данные!\nПовторите!");
-            return getNum();
-        }
-    }
-
-    public static char getChar() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.next().charAt(0);
-    }
-
     public static void calculator() {
         double num1;
         double num2;
@@ -23,19 +8,19 @@ public class Calculator {
         char action;
 
         System.out.print("Введите число 1 \n");
-        num1 = getNum();
+        num1 = Helperes.getNum();
 
 
         System.out.print("Выберете действие (+,-,*,/) \n");
-        action = getChar();
+        action = Helperes.getChar();
         while (action != '+' & action != '-' & action != '/' & action != '*') {
             System.out.println("Ошибка! не верное действие! \nПовторите!");
             System.out.print("Выберете действие (+,-,*,/) \n");
-            action = getChar();
+            action = Helperes.getChar();
         }
 
         System.out.print("Введите число 2 \n");
-        num2 = getNum();
+        num2 = Helperes.getNum();
 
 
         switch (action) {
