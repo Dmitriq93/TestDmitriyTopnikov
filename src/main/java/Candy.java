@@ -1,6 +1,9 @@
 public class Candy {
     private String name;
     private String colour;
+    private Double weight;
+    private Double price;
+
 
     public String getColour() {
         return colour;
@@ -9,9 +12,6 @@ public class Candy {
     public void setColour(String colour) {
         this.colour = colour;
     }
-
-    private Double weight;
-    private Double price;
 
     public String getName() {
         return name;
@@ -38,7 +38,7 @@ public class Candy {
     }
 
     public String getInfo() {
-        return " название = "+name+"\n вес конфеты = "+weight+" грамм\n цена конфеты = "+price+" рублей\n";
+        return " название = "  + name + "\n цвет конфеты = "+ colour + "\n вес конфеты = " + weight + " грамм\n цена конфеты = " + price + " рублей\n";
     }
 
     public Candy(String name, Double weight, Double price) {
