@@ -1,3 +1,5 @@
+import calculator.CalculatorApp;
+
 import java.util.Scanner;
 
 public class Start {
@@ -6,7 +8,8 @@ public class Start {
         System.out.print("Выберете программу\n 1 = Calculator\n 2 = String Array\n 3 = Sort Array\n 4 = Get Gift\n ");
         switch (Helperes.getInt(scanner)) {
             case 1:
-                Calculator.calculator(scanner);
+                CalculatorApp calculatorApp = new CalculatorApp();
+                calculatorApp.calculation(scanner);
                 scanner.close();
                 break;
             case 2:
