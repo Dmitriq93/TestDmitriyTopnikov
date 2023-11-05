@@ -27,6 +27,15 @@ public class CalculatorApp {
             calculation(scanner);
         }
         Calculator calculator = new Calculator();
-        System.out.print(calculator.makeCalculation(num1, num2, operator));
+        if (operator == '/' & num2 == 0) {
+            try {
+                int a = (int) num1 / (int) num2;
+            } catch (ArithmeticException e) {
+                System.out.println("на ноль делить нельзя.");
+            }
+        } else {
+            System.out.print(calculator.makeCalculation(num1, num2, operator));
+        }
+
     }
 }
