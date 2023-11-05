@@ -6,7 +6,7 @@ public class Start {
     public static void start() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Выберете программу\n 1 = Calculator\n 2 = String Array\n 3 = Sort Array\n 4 = Get Gift\n ");
-        switch (Helperes.getInt(scanner)) {
+        switch (Helpers.getInt(scanner)) {
             case 1:
                 CalculatorApp calculatorApp = new CalculatorApp();
                 calculatorApp.calculation(scanner);

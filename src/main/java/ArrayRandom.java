@@ -16,11 +16,12 @@ public class ArrayRandom {
         int indexMin = 0;
         int indexMax = 0;
         for (int i = 0; i < list.size(); i++) {
-            if (min == (int) list.get(i)) {
+            if (min <= (int) list.get(i) && (int) list.get(i) < 0) {
+                min = (int) list.get(i);
                 indexMin = i;
             }
             for (int q = 0; q < list.size(); q++) {
-                if (getMax & i == (int) list.get(q)) {
+                if (getMax & i + 1 == (int) list.get(q)) {
                     getMax = false;
                     indexMax = q;
                 }

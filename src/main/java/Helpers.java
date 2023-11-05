@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Helperes {
+public class Helpers {
     public static String getString(Scanner scanner) {
         try {
             return scanner.next();
