@@ -25,6 +25,10 @@ public class CalculatorTest {
     public void dividesTwoNumbers() {
         assertEquals(3.0, calculator.makeCalculation(6.0, 2.0, '/'),1);
 
+    }    @Test
+    public void dividesNull() {
+        assertEquals(0.0, calculator.makeCalculation(6.0, 0.0, '/'),1);
+
     }
 }
 
