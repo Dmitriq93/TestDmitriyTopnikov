@@ -1,3 +1,4 @@
+import calculator.Calculator;
 import calculator.CalculatorApp;
 
 import java.util.Scanner;
@@ -9,7 +10,7 @@ public class Start {
         switch (Helpers.getInt(scanner)) {
             case 1:
                 CalculatorApp calculatorApp = new CalculatorApp();
-                calculatorApp.calculation(scanner);
+                System.out.println(calculatorApp.calculation(scanner));
                 scanner.close();
                 break;
             case 2:
